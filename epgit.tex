@@ -107,12 +107,6 @@
 \frame{\maketitle}
 
 \begin{frame}
-	\frametitle{目次}
-	\setlength{\parskip}{0.5ex}
-	\tableofcontents
-\end{frame}
-
-\begin{frame}
 	\frametitle{扱うことと扱わないこと}
 	\begin{block}{扱うこと}
 		\begin{itemize}
@@ -127,6 +121,18 @@
 			\item ブランチ機能
 		\end{itemize}
 	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{参考文献}
+	\begin{itemize}
+		\item \textbf{Pro Git 2nd Edition}\\
+			\url{https://git-scm.com/book/ja/v2}\\
+			git 公式の日本語マニュアル
+		\item \textbf{サルでもわかる Git 入門}\\
+			\url{https://backlog.com/ja/git-tutorial/}\\
+			とりあえずこれを読めば実用できるようになる
+	\end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -228,6 +234,39 @@
 			\end{tikzpicture}
 		\end{figure}
 	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{git の利用}
+	\begin{enumerate}
+		\item \typecommand{git init}\\
+			ローカルリポジトリの作成
+		\item \typecommand{git remote add origin <url>}\\
+			リモートリポジトリの追加
+		\item \typecommand{git add .}\\
+			新しいファイルの追跡、ステージングエリアに追加
+		\item \typecommand{git commit -m "comment"}\\
+			コミット
+		\item \typecommand{git push origin master}\\
+			リモートへプッシュ
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}
+	\frametitle{git の利用}
+	\begin{itemize}
+		\item \typecommand{git pull}\\
+			リモートからのプル
+		\item \typecommand{git status}\\
+			現在の状況の確認
+		\item \typecommand{git rm}\\
+			ファイルの削除（\typecommand{--cached}オプションで
+			ステージングエリアからのみ除外）
+		\item \textbf{.gitignore}\\
+			ステージングエリアに自動で追加されない・変更を追跡されない
+			ファイルを指定する。\\
+			\url{https://github.com/github/gitignore}
+	\end{itemize}
 \end{frame}
 
 \begin{frame}
